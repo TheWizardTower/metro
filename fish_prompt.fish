@@ -75,7 +75,7 @@ function fish_prompt
 
     segment $base_color " $dir"(set_color white)"$base "
 
-    if test ! -z "$SSH_CLIENT"; or test ! -; "$FISH_METRO_SHOW_HOSTNAME"
+    if test ! -z "$SSH_CLIENT"; or test ! -z "$FISH_METRO_SHOW_HOSTNAME"
         set -l color bbb 222
 
         if test 0 -eq (id -u "$USER")
